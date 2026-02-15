@@ -1,0 +1,99 @@
+/* ===============================
+    VARIABLES COULEURS REGION
+================================= */
+:root {
+  --bleu-clair: #f1f8fc;
+  --bleu-principal: #0074c7;
+  --bleu-fonce: #00497c;
+  --gris: #384050;
+  --rouge: #cd2c2e;
+  --vert: #82b864;
+}
+
+/* ===============================
+    POLICE GRAPHIK
+================================= */
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ===============================
+    STYLE GLOBAL
+================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bleu-clair);
+  color: var(--gris);
+  font-family: 'Graphik', sans-serif;
+}
+
+/* ===============================
+   TITRES
+================================= */
+
+h1, h2, h3, h4, h5 {
+  color: var(--bleu-fonce);
+  font-weight: 700;
+}
+
+/* ===============================
+    BOUTONS
+================================= */
+
+.btn-primary {
+  background-color: var(--bleu-principal);
+  border-color: var(--bleu-principal);
+}
+
+.btn-primary:hover {
+  background-color: var(--bleu-fonce);
+  border-color: var(--bleu-fonce);
+}
+
+/* ===============================
+   CARTES
+================================= */
+
+.card {
+  border: none;
+  border-radius: 12px;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer {
+  background-color: var(--bleu-fonce);
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+    BARRE DE RECHERCHE
+================================= */
+
+input.form-control:focus {
+  border-color: var(--bleu-principal);
+  box-shadow: 0 0 0 0.2rem rgba(0, 116, 199, 0.25);
+}
